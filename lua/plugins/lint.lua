@@ -1,0 +1,18 @@
+return {}
+-- return {
+--   "mfussenegger/nvim-lint",
+--   opts = {
+--     linters_by_ft = {
+--       markdown = { "markdownlint" },
+--     },
+--   },
+--   config = function(_, opts)
+--     require("lint").linters_by_ft = opts.linters_by_ft or {}
+--
+--     -- markdownlint の extra_args を追加して MD013 を無効化
+--     local markdownlint = require("lint").linters.markdownlint
+--     if markdownlint then
+--       markdownlint.args = { "--disable", "MD013" }
+--     end
+--   end,
+-- }
