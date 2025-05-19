@@ -11,26 +11,26 @@ return {
       auto_suggestions_provider = "claude",
       claude = {
         endpoint = "https://api.anthropic.com",
-        model = "claude-3-5-sonnet-20241022",
+        model = "claude-3-7-sonnet-20250219",
         temperature = 0,
         max_tokens = 4096,
       },
-      openai = {
-        endpoint = "https://api.openai.com/v1",
-        model = "o1-mini",
-        timeout = 30000, -- Timeout in milliseconds
-        temperature = 0,
-        max_tokens = 4048,
-      },
-      copilot = {
-        endpoint = "https://api.githubcopilot.com",
-        model = "gpt-4o-2024-08-06",
-        proxy = nil, -- [protocol://]host[:port] Use this proxy
-        allow_insecure = false, -- Allow insecure server connections
-        timeout = 30000, -- Timeout in milliseconds
-        temperature = 0,
-        max_tokens = 4096,
-      },
+      -- openai = {
+      --   endpoint = "https://api.openai.com/v1",
+      --   model = "o1-mini",
+      --   timeout = 30000, -- Timeout in milliseconds
+      --   temperature = 0,
+      --   max_tokens = 4048,
+      -- },
+      -- copilot = {
+      --   endpoint = "https://api.githubcopilot.com",
+      --   model = "gpt-4o-2024-08-06",
+      --   proxy = nil, -- [protocol://]host[:port] Use this proxy
+      --   allow_insecure = false, -- Allow insecure server connections
+      --   timeout = 30000, -- Timeout in milliseconds
+      --   temperature = 0,
+      --   max_tokens = 4096,
+      -- },
       behaviour = {
         auto_suggestions = true, -- Experimental stage
         auto_set_highlight_group = true,
