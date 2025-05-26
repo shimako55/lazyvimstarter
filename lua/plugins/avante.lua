@@ -7,14 +7,20 @@ return {
     opts = {
       -- add any opts here
       provider = "claude",
-      -- suggestions provider
-      auto_suggestions_provider = "claude",
       claude = {
         endpoint = "https://api.anthropic.com",
         model = "claude-3-7-sonnet-20250219",
         temperature = 0,
-        max_tokens = 4096,
+        max_tokens = 20480,
       },
+      -- suggestions provider
+      -- auto_suggestions_provider = "claude",
+      -- claude = {
+      --   endpoint = "https://api.anthropic.com",
+      --   model = "claude-3-7-sonnet-20250219",
+      --   temperature = 0,
+      --   max_tokens = 4096,
+      -- },
       -- openai = {
       --   endpoint = "https://api.openai.com/v1",
       --   model = "o1-mini",
@@ -32,7 +38,7 @@ return {
       --   max_tokens = 4096,
       -- },
       behaviour = {
-        auto_suggestions = true, -- Experimental stage
+        auto_suggestions = false, -- Experimental stage
         auto_set_highlight_group = true,
         auto_set_keymaps = true,
         auto_apply_diff_after_generation = false,
