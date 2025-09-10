@@ -5,6 +5,16 @@ return {
     lazy = false,
     ---@type snacks.Config
     opts = {
+      -- image = {
+      --   doc = {
+      --     enabled = true,
+      --     inline = false,
+      --     float = false,
+      --   },
+      -- },
+      scroll = {
+        enabled = false,
+      },
       dashboard = {
         example = "github",
         sections = {
